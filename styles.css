@@ -610,6 +610,21 @@ html.lenis, html.lenis body { height: auto; }
   .svc__card { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; }
 }
 
+/* Aire acondicionado: fotos de catálogo (Trane VRF y Multi Split) sobre fondo blanco; se muestran completas y la flotante no tapa los equipos */
+.svc--air .svc__media { height: auto; padding-bottom: 0; }
+.svc--air .svc__img { background: #fff; }
+.svc--air .svc__img--main { height: auto; aspect-ratio: 5 / 4; }
+.svc--air .svc__img img { scale: 1; }
+.svc--air .svc__img--main img { object-position: 50% 60%; }
+.svc--air .svc__img--float { position: relative; inset: auto; width: 38%; aspect-ratio: 633 / 737; margin: -1rem 1rem 0 auto; }
+@media (min-width: 1024px) and (min-height: 700px) {
+  .svc--air .svc__card { grid-template-rows: minmax(0, 1fr); }
+  .svc--air .svc__media { height: 100%; }
+  .svc--air .svc__img--main { height: 72%; aspect-ratio: 678 / 697; margin-left: auto; }
+  .svc--air .svc__img--main img { object-position: 50% 50%; }
+  .svc--air .svc__img--float { position: absolute; left: 8%; bottom: 0; width: auto; height: 35%; margin: 0; }
+}
+
 /* ==========================================================================
    SOLAR: imagen que se abre
    ========================================================================== */
