@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="es-MX" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- Marca la página como "con JS" antes del primer pintado y activa un seguro por si los scripts externos fallan -->
+<script>
+  document.documentElement.className = 'js is-loading';
+  window.__failsafe = setTimeout(function () {
+    document.documentElement.classList.add('failsafe');
+    document.documentElement.classList.remove('is-loading');
+  }, 9000);
+</script>
+
+<title>Brothers | Aire acondicionado, paneles solares e instalaciones eléctricas</title>
+<meta name="description" content="Instalación y mantenimiento de aire acondicionado, paneles solares e instalaciones eléctricas en Puerto Vallarta y Bahía de Banderas. Cotiza por WhatsApp: 322 319 4316.">
+<meta name="keywords" content="aire acondicionado Puerto Vallarta, paneles solares Puerto Vallarta, instalaciones eléctricas Puerto Vallarta, instalación de minisplit, energía solar para casas, electricista Bahía de Banderas, Brothers">
+<meta name="author" content="Brothers">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#05070d">
+<!-- TODO producción: al definir el dominio, agregar <link rel="canonical"> y og:url, y convertir og:image (y image/logo del JSON-LD) a URLs absolutas -->
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="Brothers">
+<meta property="og:title" content="Brothers | Confort, energía y soluciones que conectan">
+<meta property="og:description" content="Aire acondicionado, paneles solares e instalaciones eléctricas para tu casa o negocio. Un solo equipo, de principio a fin.">
+<meta property="og:image" content="img/web/og-brothers.jpg">
+<meta property="og:image:alt" content="Logotipo de Brothers: aire acondicionado, paneles solares e instalaciones eléctricas">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" sizes="64x64" href="img/web/favicon-64.png">
+<link rel="icon" type="image/png" sizes="192x192" href="img/web/favicon-192.png">
+<link rel="apple-touch-icon" href="img/web/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="img/web/brothers-emblem.webp" type="image/webp">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="stylesheet" href="styles.css">
+
+<!-- Datos estructurados: negocio local + preguntas frecuentes -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["HVACBusiness", "Electrician", "LocalBusiness"],
+  "name": "Brothers",
+  "description": "Instalación, mantenimiento y reparación de aire acondicionado, paneles solares e instalaciones eléctricas para casas y negocios.",
+  "slogan": "Confort, energía y soluciones que conectan",
+  "image": "img/web/og-brothers.jpg",
+  "logo": "img/web/favicon-192.png",
+  "telephone": "+52-322-319-4316",
+  "areaServed": ["Puerto Vallarta", "Bahía de Banderas"],
+  "knowsLanguage": "es-MX",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios Brothers",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aire acondicionado: instalación, mantenimiento y reparación" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Paneles solares: energía limpia, eficiente y sostenible" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Instalaciones eléctricas seguras, modernas y certificadas" } }
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "¿Cómo sé qué aire acondicionado necesito?", "acceptedAnswer": { "@type": "Answer", "text": "Depende del tamaño del espacio, la orientación, el techo y el uso. Lo revisamos contigo en sitio o con fotos y te recomendamos el equipo adecuado." } },
+    { "@type": "Question", "name": "¿Instalan paneles solares en casas y en negocios?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Dimensionamos el sistema según tu consumo y el espacio disponible en tu azotea o techo." } },
+    { "@type": "Question", "name": "¿Qué necesito para cotizar un sistema solar?", "acceptedAnswer": { "@type": "Answer", "text": "Una foto de tu recibo de luz y fotos de tu azotea. Con eso preparamos una propuesta inicial y confirmamos los detalles en una visita." } },
+    { "@type": "Question", "name": "¿Puedo tener baterías de respaldo?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Instalamos sistemas con inversor y baterías para que tengas energía cuando falte la luz." } },
+    { "@type": "Question", "name": "¿Hacen instalaciones eléctricas en obra nueva y remodelaciones?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Trabajamos desde la canalización en losa durante la obra hasta la iluminación y el cableado de espacios remodelados." } },
+    { "@type": "Question", "name": "¿Dan mantenimiento a un aire acondicionado que ya tengo?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Hacemos mantenimiento preventivo, diagnóstico y reparación de equipos ya instalados." } },
+    { "@type": "Question", "name": "¿Cómo solicito una cotización?", "acceptedAnswer": { "@type": "Answer", "text": "Escríbenos por WhatsApp al 322 319 4316 o llena el formulario de contacto. Te respondemos para platicar tu proyecto." } }
+  ]
+}
+</script>
+<noscript><style>#loader{display:none!important}html.is-loading{overflow:auto!important}</style></noscript>
+</head>
+
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<!-- ============ PRELOADER ============ -->
+<div class="loader" id="loader" role="status" aria-live="polite" aria-label="Cargando Brothers">
+  <div class="loader__panel loader__panel--top"></div>
+  <div class="loader__panel loader__panel--bottom"></div>
+  <div class="loader__center">
+    <div class="loader__core">
+      <svg class="loader__ring" viewBox="0 0 200 200" aria-hidden="true">
+        <defs>
+          <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#2d86ff"/>
+            <stop offset="1" stop-color="#ffb21e"/>
+          </linearGradient>
+        </defs>
+        <circle class="loader__track" cx="100" cy="100" r="92"/>
+        <circle class="loader__arc" cx="100" cy="100" r="92" pathLength="100"/>
+      </svg>
+      <span class="loader__spin loader__spin--a" aria-hidden="true"></span>
+      <span class="loader__spin loader__spin--b" aria-hidden="true"></span>
+      <img class="loader__emblem" src="img/web/brothers-emblem.webp" alt="" width="695" height="570">
+    </div>
+    <p class="loader__word" aria-hidden="true">
+      <span class="is-on" data-tone="air">Enfriando el ambiente</span>
+      <span data-tone="sun">Capturando el sol</span>
+      <span data-tone="volt">Conectando la energía</span>
+    </p>
+    <p class="loader__pct" aria-hidden="true"><span id="loaderPct">0</span><small>%</small></p>
+  </div>
+</div>
+
+<div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+<!-- ============ NAVEGACIÓN ============ -->
+<header class="nav" id="nav">
+  <div class="nav__bar">
+    <a class="nav__brand" href="#inicio" aria-label="Brothers, ir al inicio">
+      <img class="nav__emblem" src="img/web/brothers-emblem-sm.webp" alt="" width="180" height="148">
+      <img class="nav__word" src="img/web/brothers-wordmark.webp" alt="Brothers" width="1100" height="119">
+    </a>
+    <nav class="nav__links" aria-label="Navegación principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#metodo">Cómo trabajamos</a>
+      <a href="#faq">Preguntas</a>
+    </nav>
+    <a class="btn btn--primary btn--sm nav__cta" href="https://wa.me/523223194316" data-wa data-msg="Hola Brothers, quiero mi cotización." target="_blank" rel="noopener">
+      <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i><span>Quiero mi cotización</span>
+    </a>
+    <button class="nav__toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <nav class="menu__links" aria-label="Menú móvil">
+    <a href="#servicios">Servicios</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#metodo">Cómo trabajamos</a>
+    <a href="#faq">Preguntas</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <a class="btn btn--primary btn--lg" href="https://wa.me/523223194316" data-wa data-msg="Hola Brothers, quiero mi cotización." target="_blank" rel="noopener">
+    <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i><span>Escríbenos por WhatsApp</span>
+  </a>
+  <p class="menu__phone">322 319 4316</p>
+</div>
+
+<main id="contenido">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio" data-theme="dark" aria-labelledby="hero-title">
+    <div class="hero__bg" aria-hidden="true">
+      <img class="hero__photo" src="img/web/solar-atardecer-a-lg.webp" alt="" width="1600" height="1204" fetchpriority="high">
+      <div class="hero__aurora hero__aurora--air"></div>
+      <div class="hero__aurora hero__aurora--sun"></div>
+      <div class="hero__floor"></div>
+      <canvas class="hero__canvas" id="heroCanvas"></canvas>
+      <div class="hero__glow" id="heroGlow"></div>
+      <div class="hero__vignette"></div>
+    </div>
+
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow hero__eyebrow" data-intro style="--d:.05s">Climatización, energía solar y electricidad</p>
+        <h1 class="hero__title" id="hero-title" data-intro-title>Confort y energía que <em>trabajan para ti.</em></h1>
+        <p class="hero__lead" data-intro style="--d:.35s">Aire acondicionado, paneles solares e instalaciones eléctricas para tu casa o negocio. Un solo equipo, de principio a fin.</p>
+        <div class="hero__cta" data-intro style="--d:.5s">
+          <a class="btn btn--primary btn--lg btn--shine" href="https://wa.me/523223194316" data-wa data-magnetic data-msg="Hola Brothers, estoy listo para cotizar mi proyecto." target="_blank" rel="noopener">
+            <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i><span>Estoy listo, quiero mi cotización</span>
+          </a>
+          <a class="btn btn--ghost btn--lg" href="#proyectos">
+            <span>Ver obras reales</span><i class="ph ph-arrow-down-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__visual" id="heroVisual" data-intro-visual>
+        <div class="hero__halo" aria-hidden="true"></div>
+        <span class="pulse pulse--a" aria-hidden="true"></span>
+        <span class="pulse pulse--b" aria-hidden="true"></span>
+        <span class="ring ring--a" aria-hidden="true"></span>
+        <span class="ring ring--b" aria-hidden="true"></span>
+        <span class="ring ring--c" aria-hidden="true"></span>
+        <div class="orbit orbit--a" aria-hidden="true"><span class="node node--air"><i class="ph ph-snowflake"></i></span></div>
+        <div class="orbit orbit--b" aria-hidden="true"><span class="node node--sun"><i class="ph ph-sun"></i></span></div>
+        <div class="orbit orbit--c" aria-hidden="true"><span class="node node--volt"><i class="ph-fill ph-lightning"></i></span></div>
+        <img class="hero__emblem" id="heroEmblem" src="img/web/brothers-emblem.webp" alt="Brothers: aire acondicionado, paneles solares e instalaciones eléctricas" width="695" height="570" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CINTA DE SERVICIOS (único marquee de la página) ============ -->
+  <div class="band" aria-label="Lo que hacemos">
+    <div class="band__tape">
+      <div class="band__track" id="bandTrack">
+        <ul class="band__list">
+          <li>Instalación de minisplit</li>
+          <li class="band__sep" aria-hidden="true"><i class="ph-fill ph-lightning"></i></li>
+          <li>Mantenimiento preventivo</li>
+          <li class="band__sep" aria-hidden="true"><i class="ph-fill ph-lightning"></i></li>
+          <li>Paneles solares</li>
+          <li class="band__sep" aria-hidden="true"><i class="ph-fill ph-lightning"></i></li>
+          <li>Inversores y baterías de respaldo</li>
+          <li class="band__sep" aria-hidden="true"><i class="ph-fill ph-lightning"></i></li>
+          <li>Canalización y cableado</li>
+          <li class="band__sep" aria-hidden="true"><i class="ph-fill ph-lightning"></i></li>
+          <li>Iluminación interior y exterior</li>
+          <li class="band__sep" aria-hidden="true"><i class="ph-fill ph-lightning"></i></li>
+          <li>Reparación y diagnóstico</li>
+          <li class="band__sep" aria-hidden="true"><i class="ph-fill ph-lightning"></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ FRASE DE MARCA ============ -->
+  <section class="sec sec--light statement" aria-label="Nuestra filosofía">
+    <div class="container">
+      <p class="statement__text" id="statementText">Cuando el <span class="c-air">aire</span> es fresco, la <span class="c-sun">luz</span> no falla y todo está bien <span class="c-volt">conectado</span>, simplemente vives mejor. Ese es nuestro trabajo.</p>
+    </div>
+  </section>
+
+  <!-- ============ SERVICIOS: pila de tarjetas con scroll ============ -->
+  <section class="sec sec--light services" id="servicios" data-theme="light" aria-labelledby="servicios-title">
+    <div class="container">
+      <header class="sec__head">
+        <h2 class="h2" id="servicios-title" data-split>Tres especialidades. <em>Un solo equipo.</em></h2>
+        <p class="lead" data-reveal>Desde el aire que respiras hasta la energía que consumes, Brothers lo conecta todo en un solo servicio.</p>
+      </header>
+    </div>
+
+    <div class="stack">
+      <!-- Aire acondicionado -->
+      <article class="svc svc--air" id="aire" style="--i:0">
+        <div class="svc__card">
+          <div class="svc__copy">
+            <span class="svc__icon" aria-hidden="true"><i class="ph ph-snowflake"></i></span>
+            <h3 class="h3">Aire acondicionado</h3>
+            <p class="svc__tag">Frescura estable en cada rincón.</p>
+            <p class="svc__text">Instalamos, mantenemos y reparamos equipos para casa y negocio, con acabados limpios y la capacidad correcta para tu espacio.</p>
+            <ul class="svc__list">
+              <li><i class="ph ph-check-circle" aria-hidden="true"></i>Instalación de minisplit y multisplit</li>
+              <li><i class="ph ph-check-circle" aria-hidden="true"></i>Mantenimiento preventivo y correctivo</li>
+              <li><i class="ph ph-check-circle" aria-hidden="true"></i>Diagnóstico y reparación</li>
+            </ul>
+            <a class="btn btn--primary" href="https://wa.me/523223194316" data-wa data-msg="Hola Brothers, quiero mi aire acondicionado instalado." target="_blank" rel="noopener">
+              <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i><span>Quiero mi aire instalado</span>
+            </a>
+          </div>
+          <div class="svc__media">
+            <figure class="svc__img svc__img--main">
+              <img src="img/web/ac-condensadores-azotea-lg.webp" srcset="img/web/ac-condensadores-azotea-sm.webp 752w, img/web/ac-condensadores-azotea-lg.webp 1204w" sizes="(min-width:1024px) 40vw, 90vw" alt="Condensadores de aire acondicionado instalados en la azotea de una residencia" width="1204" height="1600" loading="lazy" decoding="async">
+            </figure>
+            <figure class="svc__img svc__img--float">
+              <img src="img/web/ac-minisplit-sala-sm.webp" alt="Minisplit instalado en pared con acabado limpio" width="760" height="572" loading="lazy" decoding="async">
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <!-- Paneles solares -->
+      <article class="svc svc--solar" id="solar-servicio" style="--i:1">
+        <div class="svc__card">
+          <div class="svc__copy">
+            <span class="svc__icon" aria-hidden="true"><i class="ph ph-sun"></i></span>
+            <h3 class="h3">Paneles solares</h3>
+            <p class="svc__tag">Tu techo, convertido en energía propia.</p>
+            <p class="svc__text">Diseñamos e instalamos sistemas solares limpios y eficientes para casa y negocio, con inversor y baterías de respaldo cuando lo necesitas.</p>
+            <ul class="svc__list">
+              <li><i class="ph ph-check-circle" aria-hidden="true"></i>Dimensionado según tu consumo</li>
+              <li><i class="ph ph-check-circle" aria-hidden="true"></i>Estructura y montaje en azotea</li>
+              <li><i class="ph ph-check-circle" aria-hidden="true"></i>Inversores y baterías de respaldo</li>
+            </ul>
+            <a class="btn btn--primary" href="https://wa.me/523223194316" data-wa data-msg="Hola Brothers, quiero energía solar en mi techo." target="_blank" rel="noopener">
+              <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i><span>Quiero mi energía solar</span>
+            </a>
+          </div>
+          <div class="svc__media">
+            <figure class="svc__img svc__img--main">
+              <img src="img/web/solar-atardecer-b-lg.webp" srcset="img/web/solar-atardecer-b-sm.webp 760w, img/web/solar-atardecer-b-lg.webp 1600w" sizes="(min-width:1024px) 40vw, 90vw" alt="Paneles solares sobre estructura metálica en una azotea al atardecer" width="1600" height="1204" loading="lazy" decoding="async">
+            </figure>
+            <figure class="svc__img svc__img--float">
+              <img src="img/web/solar-inversor-baterias-sm.webp" alt="Inversor híbrido y baterías de respaldo instalados en pared" width="715" height="735" loading="lazy" decoding="async">
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <!-- Instalaciones eléctricas -->
+      <article class="svc svc--elec" id="electrico" style="--i:2">
+        <div class="svc__card">
+          <div class="svc__copy">
+            <span class="svc__icon" aria-hidden="true"><i class="ph-fill ph-lightning"></i></span>
+            <h3 class="h3">Instalaciones eléctricas</h3>
+            <p class="svc__tag">Seguras, modernas y certificadas.</p>
+            <p class="svc__text">De la canalización en obra nueva a la iluminación exterior: cada circuito trazado, ordenado y listo para durar.</p>
+            <ul class="svc__list">
+              <li><i class="ph ph-check-circle" aria-hidden="true"></i>Obra nueva y remodelación</li>
+              <li><i class="ph ph-check-circle" aria-hidden="true"></i>Canalización, cableado y registros</li>
+              <li><i class="ph ph-check-circle" aria-hidden="true"></i>Iluminación interior y exterior</li>
+            </ul>
+            <a class="btn btn--primary" href="https://wa.me/523223194316" data-wa data-msg="Hola Brothers, quiero una instalación eléctrica segura." target="_blank" rel="noopener">
+              <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i><span>Quiero una instalación segura</span>
+            </a>
+          </div>
+          <div class="svc__media">
+            <figure class="svc__img svc__img--main">
+              <img src="img/web/elec-losa-tuberia-lg.webp" srcset="img/web/elec-losa-tuberia-sm.webp 760w, img/web/elec-losa-tuberia-lg.webp 1600w" sizes="(min-width:1024px) 40vw, 90vw" alt="Tubería y cajas eléctricas colocadas sobre la losa antes del colado" width="1600" height="1204" loading="lazy" decoding="async">
+            </figure>
+            <figure class="svc__img svc__img--float">
+              <img src="img/web/elec-iluminacion-pergola-sm.webp" alt="Iluminación decorativa instalada en una pérgola exterior" width="760" height="572" loading="lazy" decoding="async">
+            </figure>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ SOLAR: la imagen se abre a pantalla completa ============ -->
+  <section class="sec sec--dark reveal" id="solar" data-theme="dark" aria-labelledby="solar-title">
+    <div class="reveal__pin" id="revealPin">
+      <figure class="reveal__frame" id="revealFrame">
+        <img src="img/web/solar-azotea-palmas-lg.webp" alt="Arreglo de paneles solares instalado en una azotea con palmeras al fondo" width="1600" height="1200" loading="lazy" decoding="async">
+      </figure>
+      <div class="reveal__shade" id="revealShade" aria-hidden="true"></div>
+      <h2 class="reveal__title" id="solar-title">
+        <span class="reveal__w reveal__w--l" id="revealL">Tu techo,</span>
+        <span class="reveal__w reveal__w--r" id="revealR">tu energía.</span>
+      </h2>
+      <div class="reveal__copy" id="revealCopy">
+        <p class="reveal__lead">Convierte tu azotea en tu propia planta de energía.</p>
+        <p class="reveal__text">Instalamos paneles solares con inversor y respaldo en baterías, dimensionados a lo que tu casa o negocio realmente consume.</p>
+        <a class="btn btn--primary btn--lg" href="https://wa.me/523223194316" data-wa data-msg="Hola Brothers, quiero cotizar un sistema de paneles solares." target="_blank" rel="noopener">
+          <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i><span>Clic aquí y cotiza tu sistema solar</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROYECTOS: galería con filtros y lightbox ============ -->
+  <section class="sec sec--light gallery" id="proyectos" data-theme="light" aria-labelledby="proyectos-title">
+    <div class="container">
+      <header class="sec__head sec__head--center">
+        <p class="eyebrow eyebrow--dark" data-reveal>Proyectos reales</p>
+        <h2 class="h2" id="proyectos-title" data-split>Obras reales, <em>resultados que se ven.</em></h2>
+        <p class="lead" data-reveal>Instalaciones en casas, azoteas y obras en proceso. Toca cualquier foto para verla en grande.</p>
+      </header>
+
+      <div class="filters" role="group" aria-label="Filtrar proyectos por servicio" data-reveal>
+        <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">Todo</button>
+        <button class="chip" type="button" data-filter="aire" aria-pressed="false"><i class="ph ph-snowflake" aria-hidden="true"></i>Aire acondicionado</button>
+        <button class="chip" type="button" data-filter="solar" aria-pressed="false"><i class="ph ph-sun" aria-hidden="true"></i>Paneles solares</button>
+        <button class="chip" type="button" data-filter="electrico" aria-pressed="false"><i class="ph ph-lightning" aria-hidden="true"></i>Eléctricas</button>
+      </div>
+
+      <ul class="masonry" id="masonry">
+        <li class="tile" data-cat="solar"><button type="button" class="tile__btn" data-full="img/web/solar-azotea-palmas-lg.webp" data-w="1600" data-h="1200" aria-label="Ampliar foto: Arreglo de paneles solares sobre azotea con palmeras"><img src="img/web/solar-azotea-palmas-sm.webp" alt="Arreglo de paneles solares sobre azotea con palmeras" width="760" height="570" loading="lazy" decoding="async"><span class="tile__zoom" aria-hidden="true"><i class="ph ph-arrows-out-simple"></i></span></button></li>
+        <li class="tile" data-cat="aire"><button type="button" class="tile__btn" data-full="img/web/ac-condensadores-azotea-lg.webp" data-w="1204" data-h="1600" aria-label="Ampliar foto: Condensadores de aire acondicionado alineados en azotea residencial"><img src="img/web/ac-condensadores-azotea-sm.webp" alt="Condensadores de aire acondicionado alineados en azotea residencial" width="752" height="1000" loading="lazy" decoding="async"><span class="tile__zoom" aria-hidden="true"><i class="ph ph-arrows-out-simple"></i></span></button></li>
+        <li class="tile" data-cat="electrico"><button type="button" class="tile__btn" data-full="img/web/elec-losa-tuberia-lg.webp" data-w="1600" data-h="1204" aria-label="Ampliar foto: Tubería y cajas eléctricas colocadas sobre la losa antes del colado"><img src="img/web/elec-losa-tuberia-sm.webp" alt="Tubería y cajas eléctricas colocadas sobre la losa antes del colado" width="760" height="572" loading="lazy" decoding="async"><span class="tile__zoom" aria-hidden="true"><i class="ph ph-arrows-out-simple"></i></span></button></li>
+        <li class="tile" data-cat="aire"><button type="button" class="tile__btn" data-full="img/web/ac-minisplit-tv-lg.webp" data-w="1599" data-h="899" aria-label="Ampliar foto: Minisplit instalado en pared de sala"><img src="img/web/ac-minisplit-tv-sm.webp" alt="Minisplit instalado en pared de sala" width="760" height="427" loading="lazy" decoding="async"><span class="tile__zoom" aria-hidden="true"><i class="ph ph-arrows-out-simple"></i></span></button></li>
+        <li class="tile" data-cat="solar"><button type="button" class="tile__btn" data-full="img/web/solar-atardecer-b-lg.webp" data-w="1600" data-h="1204" aria-label="Ampliar foto: Paneles solares sobre estructura metálica al atardecer"><img src="img/web/solar-atardecer-b-sm.webp" alt="Paneles solares sobre estructura metálica al atardecer" width="760" height="572" loading="lazy" decoding="async"><span class="tile__zoom" aria-hidden="true"><i class="ph ph-arrows-out-simple"></i></span></button></li>
+        <li class="tile" data-cat="electrico"><button type="button" class="tile__btn" data-full="img/web/elec-losa-cajas-lg.webp" data-w="1204" data-h="1600" aria-label="Ampliar foto: Registros eléctricos sobre losa con armado de acero"><img src="img/web/elec-losa-cajas-sm.webp" alt="Registros eléctricos sobre losa con armado de acero" width="752" height="1000" loading="lazy" decoding="async"><span class="tile__zoom" aria-hidden="true"><i class="ph ph-arrows-out-simple"></i></span></button></li>
+        <li class="tile" data-cat="aire"><button type="button" class="tile__btn" data-full="img/web/ac-condensadora-soporte-lg.webp" data-w="899" data-h="1599" aria-label="Ampliar foto: Condensadora montada sobre soporte en azotea"><img src="img/web/ac-condensadora-soporte-sm.webp" alt="Condensadora montada sobre soporte en azotea" width="562" height="1000" loading="lazy" decoding="async"><span class="tile__zoom" aria-hidden="true"><i class="ph ph-arrows-out-simple"></i></span></button></li>
+        <li class="tile" data-cat="solar"><button type="button" class="tile__btn" data-full="img/web/solar-inversor-baterias-lg.webp" data-w="715" data-h="735" aria-label="Ampliar foto: Inversor híbrido y baterías de respaldo instalados en pared"><img src="img/web/solar-inversor-baterias-sm.webp" alt="Inversor híbrido y baterías de respaldo instalados en pared" width="715" height="735" loading="lazy" decoding="async"><span class="tile__zoom" aria-hidden="true"><i class="ph ph-arrows-out-simple"></i></span></button></li>
+        <li class="tile" data-cat="electrico"><button type="button" class="tile__btn" data-full="img/web/elec-techo-canalizacion-lg.webp" data-w="1600" data-h="1200" aria-label="Ampliar foto: Canalización eléctrica en techo durante una remodelación"><img src="img/web/elec-techo-canalizacion-sm.webp" alt="Canalización eléctrica en techo durante una remodelación" width="760" height="570" loading="lazy" decoding="async"><span class="tile__zoom" aria-hidden="true"><i class="ph ph-arrows-out-simple"></i></span></button></li>
+        <li class="tile" data-cat="solar"><button type="button" class="tile__btn" data-full="img/web/solar-estructura-bahia-lg.webp" data-w="1599" data-h="899" aria-label="Ampliar foto: Estructura de paneles solares con vista a la bahía"><img src="img/web/solar-estructura-bahia-sm.webp" alt="Estructura de paneles solares con vista a la bahía" width="760" height="427" loading="lazy" decoding="async"><span class="tile__zoom" aria-hidden="true"><i class="ph ph-arrows-out-simple"></i></span></button></li>
+        <li class="tile" data-cat="aire"><button type="button" class="tile__btn" data-full="img/web/ac-minisplit-arco-lg.webp" data-w="899" data-h="1599" aria-label="Ampliar foto: Minisplit instalado sobre un arco en una vivienda"><img src="img/web/ac-minisplit-arco-sm.webp" alt="Minisplit instalado sobre un arco en una vivienda" width="562" height="1000" loading="lazy" decoding="async"><span class="tile__zoom" aria-hidden="true"><i class="ph ph-arrows-out-simple"></i></span></button></li>
+        <li class="tile" data-cat="electrico"><button type="button" class="tile__btn" data-full="img/web/elec-iluminacion-pergola-lg.webp" data-w="1600" data-h="1204" aria-label="Ampliar foto: Iluminación decorativa en pérgola exterior"><img src="img/web/elec-iluminacion-pergola-sm.webp" alt="Iluminación decorativa en pérgola exterior" width="760" height="572" loading="lazy" decoding="async"><span class="tile__zoom" aria-hidden="true"><i class="ph ph-arrows-out-simple"></i></span></button></li>
+        <li class="tile" data-cat="solar"><button type="button" class="tile__btn" data-full="img/web/solar-montaje-azotea-lg.webp" data-w="1280" data-h="960" aria-label="Ampliar foto: Equipo montando paneles solares en azotea"><img src="img/web/solar-montaje-azotea-sm.webp" alt="Equipo montando paneles solares en azotea" width="760" height="570" loading="lazy" decoding="async"><span class="tile__zoom" aria-hidden="true"><i class="ph ph-arrows-out-simple"></i></span></button></li>
+        <li class="tile" data-cat="aire"><button type="button" class="tile__btn" data-full="img/web/ac-condensadores-tejas-lg.webp" data-w="1204" data-h="1600" aria-label="Ampliar foto: Condensadores instalados junto a techo de teja"><img src="img/web/ac-condensadores-tejas-sm.webp" alt="Condensadores instalados junto a techo de teja" width="752" height="1000" loading="lazy" decoding="async"><span class="tile__zoom" aria-hidden="true"><i class="ph ph-arrows-out-simple"></i></span></button></li>
+        <li class="tile" data-cat="electrico"><button type="button" class="tile__btn" data-full="img/web/elec-obra-cableado-lg.webp" data-w="1204" data-h="1600" aria-label="Ampliar foto: Instalador acomodando cableado en obra nueva"><img src="img/web/elec-obra-cableado-sm.webp" alt="Instalador acomodando cableado en obra nueva" width="752" height="1000" loading="lazy" decoding="async"><span class="tile__zoom" aria-hidden="true"><i class="ph ph-arrows-out-simple"></i></span></button></li>
+        <li class="tile" data-cat="solar"><button type="button" class="tile__btn" data-full="img/web/solar-azotea-atardecer-lg.webp" data-w="1600" data-h="1204" aria-label="Ampliar foto: Azotea con estructura solar y unidades de aire acondicionado"><img src="img/web/solar-azotea-atardecer-sm.webp" alt="Azotea con estructura solar y unidades de aire acondicionado" width="760" height="572" loading="lazy" decoding="async"><span class="tile__zoom" aria-hidden="true"><i class="ph ph-arrows-out-simple"></i></span></button></li>
+        <li class="tile" data-cat="aire"><button type="button" class="tile__btn" data-full="img/web/ac-minisplit-limpio-lg.webp" data-w="1599" data-h="899" aria-label="Ampliar foto: Unidad interior de aire acondicionado con acabado limpio"><img src="img/web/ac-minisplit-limpio-sm.webp" alt="Unidad interior de aire acondicionado con acabado limpio" width="760" height="427" loading="lazy" decoding="async"><span class="tile__zoom" aria-hidden="true"><i class="ph ph-arrows-out-simple"></i></span></button></li>
+        <li class="tile" data-cat="electrico"><button type="button" class="tile__btn" data-full="img/web/elec-losa-aligerada-lg.webp" data-w="899" data-h="1599" aria-label="Ampliar foto: Tubería eléctrica en losa aligerada con casetones"><img src="img/web/elec-losa-aligerada-sm.webp" alt="Tubería eléctrica en losa aligerada con casetones" width="562" height="1000" loading="lazy" decoding="async"><span class="tile__zoom" aria-hidden="true"><i class="ph ph-arrows-out-simple"></i></span></button></li>
+        <li class="tile" data-cat="solar"><button type="button" class="tile__btn" data-full="img/web/solar-bateria-cableado-lg.webp" data-w="715" data-h="953" aria-label="Ampliar foto: Banco de baterías con cableado de potencia"><img src="img/web/solar-bateria-cableado-sm.webp" alt="Banco de baterías con cableado de potencia" width="715" height="953" loading="lazy" decoding="async"><span class="tile__zoom" aria-hidden="true"><i class="ph ph-arrows-out-simple"></i></span></button></li>
+        <li class="tile" data-cat="aire"><button type="button" class="tile__btn" data-full="img/web/ac-condensadora-palmas-lg.webp" data-w="1600" data-h="1204" aria-label="Ampliar foto: Condensadora instalada entre palmeras"><img src="img/web/ac-condensadora-palmas-sm.webp" alt="Condensadora instalada entre palmeras" width="760" height="572" loading="lazy" decoding="async"><span class="tile__zoom" aria-hidden="true"><i class="ph ph-arrows-out-simple"></i></span></button></li>
+        <li class="tile" data-cat="electrico"><button type="button" class="tile__btn" data-full="img/web/elec-remodelacion-cocina-lg.webp" data-w="1600" data-h="1204" aria-label="Ampliar foto: Canalizaciones nuevas durante remodelación de cocina"><img src="img/web/elec-remodelacion-cocina-sm.webp" alt="Canalizaciones nuevas durante remodelación de cocina" width="760" height="572" loading="lazy" decoding="async"><span class="tile__zoom" aria-hidden="true"><i class="ph ph-arrows-out-simple"></i></span></button></li>
+        <li class="tile" data-cat="solar"><button type="button" class="tile__btn" data-full="img/web/solar-estructura-sol-lg.webp" data-w="1600" data-h="1204" aria-label="Ampliar foto: Estructura para paneles solares con sol al atardecer"><img src="img/web/solar-estructura-sol-sm.webp" alt="Estructura para paneles solares con sol al atardecer" width="760" height="572" loading="lazy" decoding="async"><span class="tile__zoom" aria-hidden="true"><i class="ph ph-arrows-out-simple"></i></span></button></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ ELECTRICIDAD: desplazamiento horizontal con scroll ============ -->
+  <section class="sec sec--dark pan" id="electricidad" data-theme="dark" aria-labelledby="electricidad-title">
+    <div class="pan__pin" id="panPin">
+      <div class="pan__track" id="panTrack">
+        <div class="pan__intro">
+          <h2 class="h2" id="electricidad-title" data-split>Lo que no se ve es lo que <em>más importa.</em></h2>
+          <p class="lead">Una buena instalación eléctrica se construye antes del acabado. Así trabajamos cada obra, desde la losa hasta la última luminaria.</p>
+        </div>
+
+        <article class="pan__card pan__card--wide">
+          <figure><img src="img/web/elec-losa-tuberia-lg.webp" alt="Tubería y cajas eléctricas sobre la losa antes del colado" width="1600" height="1204" loading="lazy" decoding="async"></figure>
+          <div class="pan__caption">
+            <h3>Canalización antes del colado</h3>
+            <p>Tubería, cajas y circuitos trazados desde la losa para que nada quede improvisado.</p>
+          </div>
+        </article>
+
+        <article class="pan__card pan__card--tall">
+          <figure><img src="img/web/elec-obra-cableado-lg.webp" alt="Instalador acomodando cableado en una obra nueva" width="1204" height="1600" loading="lazy" decoding="async"></figure>
+          <div class="pan__caption">
+            <h3>Obra nueva, bien coordinada</h3>
+            <p>Trabajamos junto a la obra negra para dejar cada ruta lista.</p>
+          </div>
+        </article>
+
+        <article class="pan__card pan__card--wide">
+          <figure><img src="img/web/elec-techo-canalizacion-lg.webp" alt="Canalización eléctrica en el techo de un espacio en remodelación" width="1600" height="1200" loading="lazy" decoding="async"></figure>
+          <div class="pan__caption">
+            <h3>Remodelaciones sin improvisar</h3>
+            <p>Rutas nuevas en espacios existentes, con cableado ordenado y accesible.</p>
+          </div>
+        </article>
+
+        <article class="pan__card pan__card--tall">
+          <figure><img src="img/web/elec-losa-aligerada-lg.webp" alt="Tubería eléctrica integrada en losa aligerada con casetones" width="899" height="1599" loading="lazy" decoding="async"></figure>
+          <div class="pan__caption">
+            <h3>Losas aligeradas</h3>
+            <p>Tubería protegida y registros a la vista, integrados a la estructura.</p>
+          </div>
+        </article>
+
+        <article class="pan__card pan__card--wide">
+          <figure><img src="img/web/elec-iluminacion-pergola-lg.webp" alt="Pérgola exterior iluminada con luces decorativas por la noche" width="1600" height="1204" loading="lazy" decoding="async"></figure>
+          <div class="pan__caption">
+            <h3>Luz que transforma el espacio</h3>
+            <p>Alumbrado decorativo y exterior que le da carácter a terrazas y jardines.</p>
+          </div>
+        </article>
+
+        <div class="pan__outro">
+          <p class="pan__outro-text">¿Tienes una obra o remodelación en camino?</p>
+          <a class="btn btn--primary btn--lg" href="https://wa.me/523223194316" data-wa data-msg="Hola Brothers, tengo una obra o remodelación y quiero platicar la instalación eléctrica." target="_blank" rel="noopener">
+            <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i><span>Platiquemos mi proyecto eléctrico</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ POR QUÉ BROTHERS: bento ============ -->
+  <section class="sec sec--light why" id="nosotros" data-theme="light" aria-labelledby="nosotros-title">
+    <div class="container">
+      <header class="sec__head">
+        <h2 class="h2" id="nosotros-title" data-split>Trabajo que se nota. <em>Confianza que se queda.</em></h2>
+      </header>
+
+      <div class="bento">
+        <article class="cell cell--photo" data-reveal>
+          <img class="cell__bg" src="img/web/solar-azotea-atardecer-lg.webp" alt="Azotea con paneles solares y unidades de aire acondicionado al atardecer" width="1600" height="1204" loading="lazy" decoding="async">
+          <div class="cell__shade" aria-hidden="true"></div>
+          <div class="cell__body">
+            <h3 class="h3">Un solo equipo para todo lo que hace funcionar tu casa.</h3>
+            <p>Aire, energía solar y electricidad coordinados por las mismas manos. Menos intermediarios, menos pendientes.</p>
+            <a class="btn btn--primary" href="https://wa.me/523223194316" data-wa data-msg="Hola Brothers, quiero hablar de mi proyecto." target="_blank" rel="noopener">
+              <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i><span>Hablemos de mi proyecto</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="cell cell--blue" data-reveal style="--d:.08s">
+          <span class="cell__icon" aria-hidden="true"><i class="ph ph-shield-check"></i></span>
+          <h3>Calidad garantizada</h3>
+          <p>Equipos y materiales de calidad, instalados con criterio técnico.</p>
+        </article>
+
+        <article class="cell cell--amber" data-reveal style="--d:.16s">
+          <span class="cell__icon" aria-hidden="true"><i class="ph ph-hard-hat"></i></span>
+          <h3>Trabajo profesional</h3>
+          <p>Instaladores que cuidan el detalle, el orden y la limpieza de la obra.</p>
+        </article>
+
+        <article class="cell cell--paper" data-reveal style="--d:.24s">
+          <span class="cell__icon" aria-hidden="true"><i class="ph ph-ruler"></i></span>
+          <h3>Soluciones a tu medida</h3>
+          <p>Cada casa y cada negocio consumen distinto. Diseñamos a la tuya.</p>
+        </article>
+
+        <article class="cell cell--ink" data-reveal style="--d:.32s">
+          <span class="cell__icon" aria-hidden="true"><i class="ph ph-handshake"></i></span>
+          <h3>Compromiso y confianza</h3>
+          <p>Te explicamos todo con claridad y respondemos cuando nos necesitas.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MÉTODO: línea de tiempo con progreso ============ -->
+  <section class="sec sec--dark process" id="metodo" data-theme="dark" aria-labelledby="metodo-title">
+    <div class="container process__grid">
+      <header class="process__head">
+        <p class="eyebrow" data-reveal>Cómo trabajamos</p>
+        <h2 class="h2" id="metodo-title" data-split>Del primer mensaje a tu <em>instalación lista.</em></h2>
+        <p class="lead" data-reveal>Un proceso claro, sin sorpresas, para que sepas qué sigue en cada etapa.</p>
+        <a class="btn btn--primary btn--lg" data-reveal href="https://wa.me/523223194316" data-wa data-msg="Hola Brothers, quiero dar el primer paso con mi proyecto." target="_blank" rel="noopener">
+          <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i><span>Quiero dar el primer paso</span>
+        </a>
+      </header>
+
+      <ol class="timeline" id="timeline">
+        <li class="timeline__rail" aria-hidden="true"><i id="timelineFill"></i></li>
+        <li class="step">
+          <span class="step__node" aria-hidden="true"><i class="ph ph-chat-circle-text"></i></span>
+          <div class="step__body">
+            <h3>Escuchamos</h3>
+            <p>Nos cuentas qué necesitas por WhatsApp. Revisamos tu espacio, tu consumo y tus prioridades.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__node" aria-hidden="true"><i class="ph ph-clipboard-text"></i></span>
+          <div class="step__body">
+            <h3>Proponemos</h3>
+            <p>Te presentamos una solución clara: equipo, alcance y tiempos. Sin letra chiquita.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__node" aria-hidden="true"><i class="ph ph-wrench"></i></span>
+          <div class="step__body">
+            <h3>Instalamos</h3>
+            <p>Equipo técnico en sitio, trabajo limpio y ordenado, con materiales de calidad.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__node" aria-hidden="true"><i class="ph ph-seal-check"></i></span>
+          <div class="step__body">
+            <h3>Acompañamos</h3>
+            <p>Probamos todo contigo, te explicamos cómo usarlo y seguimos disponibles para mantenimiento.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ PREGUNTAS FRECUENTES ============ -->
+  <section class="sec sec--light faq" id="faq" data-theme="light" aria-labelledby="faq-title">
+    <div class="container faq__grid">
+      <header class="faq__head">
+        <h2 class="h2" id="faq-title" data-split>Preguntas <em>frecuentes.</em></h2>
+        <p class="lead" data-reveal>Lo que más nos preguntan antes de empezar un proyecto.</p>
+        <a class="btn btn--dark" data-reveal href="https://wa.me/523223194316" data-wa data-msg="Hola Brothers, tengo una duda sobre sus servicios." target="_blank" rel="noopener">
+          <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i><span>¿Sigues con dudas? Escríbenos</span>
+        </a>
+      </header>
+
+      <div class="acc" id="acc">
+        <div class="acc__item" data-reveal>
+          <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="a1" id="q1">¿Cómo sé qué aire acondicionado necesito?<i class="ph ph-plus" aria-hidden="true"></i></button></h3>
+          <div class="acc__panel" id="a1" role="region" aria-labelledby="q1"><div><p>Depende del tamaño del espacio, la orientación, el techo y el uso. Lo revisamos contigo en sitio o con fotos, y te recomendamos el equipo adecuado.</p></div></div>
+        </div>
+        <div class="acc__item" data-reveal>
+          <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="a2" id="q2">¿Instalan paneles solares en casas y en negocios?<i class="ph ph-plus" aria-hidden="true"></i></button></h3>
+          <div class="acc__panel" id="a2" role="region" aria-labelledby="q2"><div><p>Sí. Dimensionamos el sistema según tu consumo y el espacio disponible en tu azotea o techo.</p></div></div>
+        </div>
+        <div class="acc__item" data-reveal>
+          <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="a3" id="q3">¿Qué necesito para cotizar un sistema solar?<i class="ph ph-plus" aria-hidden="true"></i></button></h3>
+          <div class="acc__panel" id="a3" role="region" aria-labelledby="q3"><div><p>Una foto de tu recibo de luz y fotos de tu azotea. Con eso preparamos una propuesta inicial y confirmamos los detalles en una visita.</p></div></div>
+        </div>
+        <div class="acc__item" data-reveal>
+          <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="a4" id="q4">¿Puedo tener baterías de respaldo?<i class="ph ph-plus" aria-hidden="true"></i></button></h3>
+          <div class="acc__panel" id="a4" role="region" aria-labelledby="q4"><div><p>Sí. Instalamos sistemas con inversor y baterías para que tengas energía cuando falte la luz.</p></div></div>
+        </div>
+        <div class="acc__item" data-reveal>
+          <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="a5" id="q5">¿Hacen instalaciones eléctricas en obra nueva y remodelaciones?<i class="ph ph-plus" aria-hidden="true"></i></button></h3>
+          <div class="acc__panel" id="a5" role="region" aria-labelledby="q5"><div><p>Sí. Trabajamos desde la canalización en losa durante la obra hasta la iluminación y el cableado de espacios remodelados.</p></div></div>
+        </div>
+        <div class="acc__item" data-reveal>
+          <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="a6" id="q6">¿Dan mantenimiento a un aire acondicionado que ya tengo?<i class="ph ph-plus" aria-hidden="true"></i></button></h3>
+          <div class="acc__panel" id="a6" role="region" aria-labelledby="q6"><div><p>Sí. Hacemos mantenimiento preventivo, diagnóstico y reparación de equipos ya instalados.</p></div></div>
+        </div>
+        <div class="acc__item" data-reveal>
+          <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="a7" id="q7">¿Cómo solicito una cotización?<i class="ph ph-plus" aria-hidden="true"></i></button></h3>
+          <div class="acc__panel" id="a7" role="region" aria-labelledby="q7"><div><p>Escríbenos por WhatsApp al 322 319 4316 o llena el formulario de contacto. Te respondemos para platicar tu proyecto.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="sec sec--dark contact" id="contacto" data-theme="dark" aria-labelledby="contacto-title">
+    <div class="contact__bg" aria-hidden="true">
+      <span class="contact__orb contact__orb--air"></span>
+      <span class="contact__orb contact__orb--sun"></span>
+      <img class="contact__mark" src="img/web/brothers-emblem.webp" alt="" width="695" height="570" loading="lazy" decoding="async">
+    </div>
+    <div class="container contact__grid">
+      <div class="contact__copy">
+        <h2 class="h2" id="contacto-title" data-split>Cuéntanos tu proyecto. <em>Nosotros lo conectamos.</em></h2>
+        <p class="lead" data-reveal>Escríbenos y te respondemos por WhatsApp para platicar qué necesitas y cómo lo resolvemos.</p>
+
+        <ul class="contact__list" data-reveal>
+          <li>
+            <span class="contact__ico"><i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i></span>
+            <div><small>WhatsApp</small><a href="https://wa.me/523223194316" data-wa data-msg="Hola Brothers, me gustaría más información." target="_blank" rel="noopener">322 319 4316</a></div>
+          </li>
+          <li>
+            <span class="contact__ico"><i class="ph ph-map-pin" aria-hidden="true"></i></span>
+            <div><small>Zona de servicio</small><span>Puerto Vallarta y Bahía de Banderas</span></div>
+          </li>
+        </ul>
+      </div>
+
+      <form class="form" id="contactForm" novalidate data-reveal>
+        <fieldset class="form__group">
+          <legend>¿Qué necesitas?</legend>
+          <div class="choices" role="radiogroup" aria-describedby="serviceError">
+            <label class="choice"><input type="radio" name="service" value="Aire acondicionado" required><span><i class="ph ph-snowflake" aria-hidden="true"></i>Aire acondicionado</span></label>
+            <label class="choice"><input type="radio" name="service" value="Paneles solares"><span><i class="ph ph-sun" aria-hidden="true"></i>Paneles solares</span></label>
+            <label class="choice"><input type="radio" name="service" value="Instalaciones eléctricas"><span><i class="ph ph-lightning" aria-hidden="true"></i>Instalaciones eléctricas</span></label>
+            <label class="choice"><input type="radio" name="service" value="Varios servicios"><span><i class="ph ph-stack" aria-hidden="true"></i>Varios servicios</span></label>
+          </div>
+          <p class="form__error" id="serviceError" role="alert"></p>
+        </fieldset>
+
+        <div class="field">
+          <label for="f-name">Tu nombre</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Ej. Mariana Rodríguez" required aria-describedby="nameError">
+          <p class="form__error" id="nameError" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-zone">Zona del proyecto <span class="opt">(opcional)</span></label>
+          <input id="f-zone" name="zone" type="text" autocomplete="off" placeholder="Ej. Marina Vallarta">
+        </div>
+
+        <div class="field">
+          <label for="f-msg">Cuéntanos más <span class="opt">(opcional)</span></label>
+          <textarea id="f-msg" name="message" rows="3" placeholder="Ej. Quiero cotizar un minisplit para la recámara principal."></textarea>
+        </div>
+
+        <button class="btn btn--primary btn--lg btn--block" type="submit" id="formSubmit">
+          <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i><span class="btn__label">Enviar mi solicitud por WhatsApp</span>
+          <span class="btn__spin" aria-hidden="true"><i class="ph ph-circle-notch"></i></span>
+        </button>
+        <p class="form__note" id="formNote">Se abrirá WhatsApp con tu mensaje listo para enviar.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- ============ PIE DE PÁGINA ============ -->
+<footer class="footer" data-theme="dark">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <img src="img/web/brothers-emblem-sm.webp" alt="" width="180" height="148" loading="lazy" decoding="async">
+      <p class="footer__slogan">Confort, energía y soluciones que conectan.</p>
+      <p class="footer__tag">¡Tu comodidad, nuestra prioridad!</p>
+    </div>
+    <nav class="footer__col" aria-label="Servicios">
+      <h2>Servicios</h2>
+      <a href="#aire">Aire acondicionado</a>
+      <a href="#solar-servicio">Paneles solares</a>
+      <a href="#electrico">Instalaciones eléctricas</a>
+    </nav>
+    <nav class="footer__col" aria-label="Navegación del sitio">
+      <h2>Sitio</h2>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#metodo">Cómo trabajamos</a>
+      <a href="#faq">Preguntas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="footer__col">
+      <h2>Contacto</h2>
+      <a href="https://wa.me/523223194316" data-wa data-msg="Hola Brothers, me gustaría más información." target="_blank" rel="noopener">WhatsApp 322 319 4316</a>
+      <span>Puerto Vallarta y Bahía de Banderas</span>
+    </div>
+  </div>
+  <div class="footer__giant" aria-hidden="true">
+    <img src="img/web/brothers-wordmark.webp" alt="" width="1100" height="119" loading="lazy" decoding="async">
+  </div>
+  <div class="container footer__legal">
+    <p>© 2026 Brothers. Todos los derechos reservados.</p>
+    <a href="#inicio" class="footer__top" aria-label="Volver al inicio">Volver arriba <i class="ph ph-arrow-up" aria-hidden="true"></i></a>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLOTANTE ============ -->
+<div class="wa" id="wa">
+  <p class="wa__bubble" id="waBubble" role="status">¿Hablamos? Respondemos por WhatsApp.</p>
+  <a class="wa__btn" href="https://wa.me/523223194316" data-wa data-msg="Hola Brothers, vi su página y quiero más información." target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <span class="wa__ping" aria-hidden="true"></span>
+    <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i>
+  </a>
+</div>
+
+<!-- ============ LIGHTBOX ============ -->
+<dialog class="lightbox" id="lightbox" aria-label="Galería de proyectos" data-lenis-prevent>
+  <button class="lightbox__close" type="button" id="lbClose" aria-label="Cerrar galería"><i class="ph ph-x" aria-hidden="true"></i></button>
+  <button class="lightbox__nav lightbox__nav--prev" type="button" id="lbPrev" aria-label="Foto anterior"><i class="ph ph-caret-left" aria-hidden="true"></i></button>
+  <figure class="lightbox__fig">
+    <img id="lbImg" src="" alt="" width="1600" height="1204">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button class="lightbox__nav lightbox__nav--next" type="button" id="lbNext" aria-label="Foto siguiente"><i class="ph ph-caret-right" aria-hidden="true"></i></button>
+</dialog>
+
+<!-- Librerías de animación (versiones fijas). Si no cargan, la página sigue funcionando sin los efectos de scroll avanzados. -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+<script defer src="app.js"></script>
+</body>
+</html>
